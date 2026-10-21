@@ -2,14 +2,7 @@ import java.util.Scanner;
 
 public class Katas3 {
     public static void main(String[] args) {
-        // Pide el precio de cada producto que el cliente pide
-        // do while para varios productos |  0 para salir
-        // subtotal
-        // iva
-        // total = subtotal + iva
 
-        // total > 50000 - 10%
-        // si ingresa
         int precios;
         int valor_productos = 0;
         int subtotal= 0;
@@ -51,17 +44,12 @@ public class Katas3 {
         System.out.println("Total con iva: $"+total);
 
         if (total >= descuento){
-            System.out.println("");
-            System.out.println("");
-            System.out.println("*********************************************************");
-            System.out.println("*********************************************************");
-            System.out.println("felicidades ganaste un decuento del 10% sobre la compra");
+
             System.out.println("Descuento:"+ (total*porcentaje_descuento)/100);
             total = total -((total*porcentaje_descuento)/100);
 
             System.out.println("total a pagar :"+ total);
-            System.out.println("*********************************************************");
-            System.out.println("*********************************************************");
+
         }
 
 
